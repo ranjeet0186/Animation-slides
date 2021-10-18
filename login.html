@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="registration.js"></script>
+</head>
+<body>
+    <!--This Page for Sign up and Login-->
+    <section>
+        <div class="container">
+            <div class="user signinbx">
+                <div class="imgbx"><img src="log1 (1).jpg" style="height: 570px;"></div>
+                <div class="formbx">
+                    <form method="post" name="registration_form" onsubmit="return validate()">
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="Username" name="username">
+                        <input type="password" placeholder="Password" name="password">
+                        <input type="submit" value="LOGIN" >
+                        <p class="signup"> DON'T HAVE AN ACCOUNT? <a href="#" onclick="toggleForm();">Sign Up.</a></p>
+                    </form>
+                </div>
+            </div>
+            <!--This was second Page of Creating Account-->
+            <div class="user signupbx">
+                <div class="imgbx"><img src="sign1.jpg" style="height: 550px;"></div>
+                <div class="formbx">
+                    <form method="post" name="registration_form" onsubmit="return validate()">
+                        <h2>Create an Account</h2>
+                        <input type="text" placeholder="Username" name="username1">
+                        <input type="text" placeholder="Email Address" name="email">
+                        <input type="password" placeholder="Password" name="password2">
+                        <input type="password" placeholder="Confirm Password" name="password3">
+                        Mobile Number   <input type="number" min="0" max="11" style="width: 65%;" name="mobile">
+                        Age  <input type="number" id="quantity" name="quantity" min="18" max="60" style="width:30%;"><br>
+                        Gender<input type="radio" name="gender" style="width: 10%;" > Male <input type="radio" name="gender" style="width: 10%;"> Female <br>
+                        <input type="submit" value="SIGN UP">
+                        <p class="signup">ALREADY HAVE AN ACCOUNT?<a href="#" onclick="toggleForm();">Sign In.</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
